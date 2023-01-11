@@ -20,7 +20,13 @@ import lombok.Data;
  * @author liuweidong03 <liuweidong03@kuaishou.com>
  * Created on 2023/1/12
  */
-@OpenAPIDefinition()
+@OpenAPIDefinition(
+        info = @Info(
+                title = "Ti",
+                description = "Desc",
+                version = "v1"
+        )
+)
 @RestController // @RestController = @Controller + @ResponseBody
 @RequestMapping("/demo")
 public class ControllerDemo {
